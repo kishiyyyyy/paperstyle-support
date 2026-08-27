@@ -1,0 +1,168 @@
+:root {
+  --bg: #faf8f4;
+  --fg: #23211e;
+  --muted: #6b665f;
+  --rule: #e2ded6;
+  --link: #3c5a86;
+  --card: #f3f0ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1b19;
+    --fg: #e6e2db;
+    --muted: #9b958c;
+    --rule: #35332f;
+    --link: #9db8dd;
+    --card: #252320;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", Arial,
+    sans-serif;
+  font-size: 17px;
+  line-height: 1.85;
+  font-feature-settings: "palt";
+  /* 長音符や小書き仮名が行頭に落ちるのを防ぐ。日本語の見出しで目に付く。 */
+  line-break: strict;
+}
+
+main {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 3rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+}
+
+p,
+ul {
+  margin: 0 0 1.1rem;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.lead {
+  font-size: 1.0625rem;
+}
+
+.langs {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.langs a {
+  margin-right: 0.75rem;
+}
+
+.contact {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 0 2.5rem;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact .address {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.contact .note {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+section[lang] > h1 {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+main > section[lang]:first-child > h1 {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* The first heading inside a section already sits under a rule of its own. */
+section[lang] > h2:first-child {
+  margin-top: 0;
+}
+
+footer {
+  max-width: 36rem;
+  margin: 4rem auto 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+footer a {
+  margin-right: 0.75rem;
+}
