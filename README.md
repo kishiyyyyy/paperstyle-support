@@ -32,12 +32,13 @@ LP（`PaperScreen` の #14）は別リポジトリにします。理由は2つ�
 
 このリポジトリは公開後ほぼコミットされない状態が正常です。
 
-## やり残し
+## 連絡先
 
-**`SUPPORT_EMAIL_HERE` を実際のアドレスに置き換えてください。** 4箇所あります。
+`paperscreen.support@gmail.com`。サポートページとプライバシーポリシーの日英、計3箇所に
+同じアドレスを置いています。変えるときは3箇所すべてです。
 
 ```bash
-grep -rn SUPPORT_EMAIL_HERE .
+grep -rn 'paperscreen.support@gmail.com' .
 ```
 
 サポートURLに実際の連絡先が載っていることはガイドライン1.5の要件です。審査担当はiPhoneで
