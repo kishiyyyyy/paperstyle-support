@@ -1,6 +1,6 @@
-# paperscreen-support
+# paperstyle-support
 
-Paperscreen のサポートページとプライバシーポリシー。GitHub Pages がそのまま配信します。
+Paperstyle のサポートページとプライバシーポリシー。GitHub Pages がそのまま配信します。
 ビルドはありません。手書きのHTMLとCSSだけです。
 
 ```
@@ -9,21 +9,21 @@ privacy/index.html  プライバシーポリシー（日英1ページ）
 style.css           共通
 ```
 
-アプリ本体は非公開の `kishiyyyyy/PaperScreen`。**判断の記録はそちらの `docs/decisions.md`
+アプリ本体は非公開の `kishiyyyyy/Paperstyle`。**判断の記録はそちらの `docs/decisions.md`
 にあります。** ここには公開する文章だけを置きます。
 
 ## App Store Connect に入れる URL
 
 | 欄 | URL |
 | --- | --- |
-| Support URL | `https://kishiyyyyy.github.io/paperscreen-support/` |
-| Privacy Policy URL | `https://kishiyyyyy.github.io/paperscreen-support/privacy/` |
+| Support URL | `https://kishiyyyyy.github.io/paperstyle-support/` |
+| Privacy Policy URL | `https://kishiyyyyy.github.io/paperstyle-support/privacy/` |
 
 どちらも審査なしで差し替えられるメタデータです。独自ドメインに移しても再提出は要りません。
 
 ## LPと同居させない
 
-LP（`PaperScreen` の #14）は別リポジトリにします。理由は2つです。
+LP（`Paperstyle` の #14）は別リポジトリにします。理由は2つです。
 
 - LPはCanvasのデモを持つ予定で、静的サイトジェネレータを入れる可能性がある。生成器は
   出力を丸ごと作り直すので、手書きのページと同居すると消さない配慮が要り続ける
@@ -34,11 +34,11 @@ LP（`PaperScreen` の #14）は別リポジトリにします。理由は2つ�
 
 ## 連絡先
 
-`paperscreen.support@gmail.com`。サポートページとプライバシーポリシーの日英、計3箇所に
+`paperstyle.support@gmail.com`。サポートページとプライバシーポリシーの日英、計3箇所に
 同じアドレスを置いています。変えるときは3箇所すべてです。
 
 ```bash
-grep -rn 'paperscreen.support@gmail.com' .
+grep -rn 'paperstyle.support@gmail.com' .
 ```
 
 サポートURLに実際の連絡先が載っていることはガイドライン1.5の要件です。審査担当はiPhoneで
@@ -56,4 +56,4 @@ grep -rn 'paperscreen.support@gmail.com' .
 - 9種類以上のテクスチャ
 - 劇的に変わる / はっきり違う
 
-アプリ名は `Paperscreen`。大文字は先頭の P だけです。
+アプリ名は `Paperstyle`。大文字は先頭の P だけです。
